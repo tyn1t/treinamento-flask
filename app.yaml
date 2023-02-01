@@ -1,0 +1,13 @@
+runtime: python311
+api_version:1
+theadsaafe:true
+
+handlers:
+ - url: /static
+   static_dir: static
+ - url /.*
+   script: main.app
+
+libraries:
+  - name: ssl
+  - version: latest
